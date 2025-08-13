@@ -10,10 +10,7 @@ import { addUser } from '../Redux/AuthSlice';
 export default function Login() {
   const dispatch=useDispatch()
   const navigate=useNavigate()
-  const [value,setValue]=useState({
-    email:"zahidtime313@gmail.com",
-    password:"12345"
-  })
+  const [value,setValue]=useState(true)
 
   const hanldeChange=(e)=>{
 
