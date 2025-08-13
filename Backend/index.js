@@ -14,7 +14,8 @@ DbCon()
 
 app.use(cors({
     credentials: true,
-    origin: 'https://jay-keep-notes.vercel.app'  // Replace with your frontend URL
+    origin: 'https://jay-keep-notes.vercel.app',
+     methods: ['GET', 'POST', 'PUT', 'DELETE'], // Replace with your frontend URL
 }));
 app.use(cookieParser())
 app.use(express.json())
