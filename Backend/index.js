@@ -6,6 +6,7 @@ import AuthRoutes from './routes/Auth.js'
 import NotesRoutes from './routes/Notes.js'
 import cookieParser from 'cookie-parser'
 dotenv.config()
+
 const PORT=process.env.PORT
 const app=express()
 
@@ -23,6 +24,14 @@ app.use('/notes',NotesRoutes)
 app.get('/',(req,res)=>{
     res.send('hello from backend')
 })
+
+// res.cookie('token', jwtToken, {
+//   httpOnly: true,
+//   secure: true,      // required for cross-site in production
+//   sameSite: 'none',  // required for cross-site cookies
+//   path: '/',         // usually '/'
+//   maxAge: 7 * 24 * 60 * 60 * 1000
+// });
 
 
 app.listen(PORT,()=>{
