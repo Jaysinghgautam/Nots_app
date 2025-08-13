@@ -1,5 +1,5 @@
 {
   "rewrites": [
-    { "source": "/api/:path*", "destination": "https://your-backend-domain/:path*" }
+    { "source": "/api/:path*", "destination": "https://nots-app-api.vercel.app/:path*" }
   ]
 }
